@@ -8,10 +8,6 @@ import os
 
 LOCAL = False
 
-import os
-os.environ['HOPSWORKS_API_KEY'] = 'rd3AnewLiGn44iYx.ECMxeKjZYC48N5Qm4BFYWCH5oWrAAamQ4GEdJ3D03l6hjlFlLjG3pApQXK9MqJml'
-
-
 from datetime import datetime 
 import numpy as np
 import pandas as pd
@@ -84,7 +80,7 @@ if LOCAL == False:
     def f():
         import hopsworks
 
-        project = hopsworks.login(api_key_value= os.environ['HOPSWORKS_API_KEY'])
+        project = hopsworks.login()
     
         fs = project.get_feature_store()         
 

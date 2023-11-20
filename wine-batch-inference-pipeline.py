@@ -7,7 +7,6 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 
-os.environ['HOPSWORKS_API_KEY'] = 'rd3AnewLiGn44iYx.ECMxeKjZYC48N5Qm4BFYWCH5oWrAAamQ4GEdJ3D03l6hjlFlLjG3pApQXK9MqJml'
 
 LOCAL = False  # Set to False to deploy on the cloud using Modal
 
@@ -31,7 +30,7 @@ def batch_inference():
     from PIL import Image, ImageDraw
 
     # Log in to Hopsworks and get the feature store
-    project = hopsworks.login(api_key_value = os.environ['HOPSWORKS_API_KEY'])
+    project = hopsworks.login()
     fs = project.get_feature_store() 
 
     # Fetch the models from the model registry
