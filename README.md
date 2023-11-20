@@ -44,18 +44,18 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-# Perform EDA and backfilling
+### Perform EDA and backfilling
 jupyter notebook wine-eda-and-backfilling.ipynb
 
-# Run feature pipeline on Modal
+### Run feature pipeline on Modal
 python wine-feature-pipeline-daily.py
 
-# Train models
+### Train models
 jupyter notebook wine-training-pipeline.ipynb
 
-# Execute batch inference pipeline on Modal
+### Execute batch inference pipeline on Modal
 python wine-batch-inference-pipeline.py
 
-# Run the Gradio interface (HuggingFace Spaces)
+### Run the Gradio interface (HuggingFace Spaces)
 python huggingface-space-wine/app.py
 
