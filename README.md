@@ -31,6 +31,10 @@ The dataset used in this project is the Wine Quality Dataset, which can be found
   - Contains a Gradio interface for making wine quality predictions using sliders to adjust feature values.
   - Displays the classification accuracy, confusion matrix, test MSE, and prediction comparisons of the two models on the batch data.
 
+## Huggingface Space link
+
+Check out the app on huggingface space [here](https://huggingface.co/spaces/Mompansy/iris)
+
 ## Setup and Installation
 
 Run the following bash script and replace the HopsWorks login api_key_value with your own api key
